@@ -1,0 +1,82 @@
+@import url('reset.css');
+
+main {
+  --neon-green: #53ffaa;
+  --heading-color: #cee3e9;
+  --page-bg-color: #202733;
+  --main-font: 'Manrope', sans-serif;
+
+  align-items: center;
+  background: var(--page-bg-color);
+  display: flex;
+  font-family: var(--main-font);
+  font-weight: 800;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-size: 1.75rem;
+  font-weight: inherit;
+  line-height: 1.36;
+  margin-block: 1.25rem;
+}
+
+p {
+  color: var(--neon-green);
+  font-weight: inherit;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+button {
+  --img-size: 4rem;
+
+  align-items: center;
+  background: var(--neon-green);
+  border: 0;
+  border-radius: 50%;
+  bottom: -2rem;
+  cursor: pointer;
+  display: flex;
+  height: var(--img-size);
+  justify-content: center;
+  position: absolute;
+  transition: all 0.3s ease;
+  width: var(--img-size);
+}
+
+button:hover {
+  box-shadow: 0px 0px 40px 0px var(--neon-green);
+}
+
+.quote-box {
+  --box-color: #313a48;
+
+  align-items: center;
+  background: var(--box-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 33.75rem;
+  padding: 2.65rem 2.65rem 4.5rem;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.6875rem;
+  }
+
+  .quote-box {
+    max-width: 21.4rem;
+    padding: 2.8rem 2.8rem 4.5rem;
+  }
+}

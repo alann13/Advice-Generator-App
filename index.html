@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="src/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Advice Generator App</title>
+  </head>
+  <body>
+    <main>
+      <div class="quote-box">
+        <p></p>
+        <h1>Loading...</h1>
+        <picture>
+          <source
+            srcset="src/images/pattern-divider-mobile.svg"
+            media="(max-width: 37.5rem)"
+          />
+          <img
+            src="src/images/pattern-divider-desktop.svg"
+            alt="pattern divider"
+          />
+        </picture>
+
+        <button type="button" id="quote-generator">
+          <img src="src/images/icon-dice.svg" alt="Dice button" />
+        </button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
